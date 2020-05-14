@@ -13,6 +13,7 @@
 		86FF2251246DB5740044F4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF224F246DB5740044F4FD /* Main.storyboard */; };
 		86FF2253246DB5760044F4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FF2252246DB5760044F4FD /* Assets.xcassets */; };
 		86FF2256246DB5760044F4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF2254246DB5760044F4FD /* LaunchScreen.storyboard */; };
+		9CE53E6BF35CCD22C75F8D65 /* Pods_POCNeedle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24B7524F3DB56760C3B8B86 /* Pods_POCNeedle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		86FF2252246DB5760044F4FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86FF2255246DB5760044F4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86FF2257246DB5760044F4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC5D644ECAEB9391C1EDECC /* Pods-POCNeedle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POCNeedle.release.xcconfig"; path = "Target Support Files/Pods-POCNeedle/Pods-POCNeedle.release.xcconfig"; sourceTree = "<group>"; };
+		A24B7524F3DB56760C3B8B86 /* Pods_POCNeedle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POCNeedle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C365EE0B8479BAFE0EEF8A3E /* Pods-POCNeedle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POCNeedle.debug.xcconfig"; path = "Target Support Files/Pods-POCNeedle/Pods-POCNeedle.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE53E6BF35CCD22C75F8D65 /* Pods_POCNeedle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		177D7D5CC2BB0E5D9B16A9F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A24B7524F3DB56760C3B8B86 /* Pods_POCNeedle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DA54AD11EBD354FD618C62C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C365EE0B8479BAFE0EEF8A3E /* Pods-POCNeedle.debug.xcconfig */,
+				8CC5D644ECAEB9391C1EDECC /* Pods-POCNeedle.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		86FF223D246DB5740044F4FD = {
 			isa = PBXGroup;
 			children = (
 				86FF2248246DB5740044F4FD /* POCNeedle */,
 				86FF2247246DB5740044F4FD /* Products */,
+				2DA54AD11EBD354FD618C62C /* Pods */,
+				177D7D5CC2BB0E5D9B16A9F5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86FF225A246DB5760044F4FD /* Build configuration list for PBXNativeTarget "POCNeedle" */;
 			buildPhases = (
+				68421EC542FA8FA5D097189F /* [CP] Check Pods Manifest.lock */,
 				86FF2242246DB5740044F4FD /* Sources */,
 				86FF2243246DB5740044F4FD /* Frameworks */,
 				86FF2244246DB5740044F4FD /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68421EC542FA8FA5D097189F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-POCNeedle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		86FF2242246DB5740044F4FD /* Sources */ = {
@@ -282,6 +333,7 @@
 		};
 		86FF225B246DB5760044F4FD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C365EE0B8479BAFE0EEF8A3E /* Pods-POCNeedle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +352,7 @@
 		};
 		86FF225C246DB5760044F4FD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CC5D644ECAEB9391C1EDECC /* Pods-POCNeedle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
