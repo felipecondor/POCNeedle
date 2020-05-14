@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,7 +56,6 @@
 				C365EE0B8479BAFE0EEF8A3E /* Pods-POCNeedle.debug.xcconfig */,
 				8CC5D644ECAEB9391C1EDECC /* Pods-POCNeedle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
