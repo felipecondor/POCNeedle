@@ -137,3 +137,4 @@ EvercheckWallet/fastlane/test_output/report.junit
 **/fastlane/test_output
 *.coverage.txt
 **/fastlane/test_outputs
+POCNeedle/NeedleGenerated.swift
