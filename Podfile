@@ -6,6 +6,6 @@ target 'POCNeedle' do
   use_frameworks!
 
   # Pods for POCNeedle
-  # pod 'NeedleFoundation'
+  pod 'NeedleFoundation'
 
 end
