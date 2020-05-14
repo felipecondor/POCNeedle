@@ -1,3 +1,16 @@
-PODFILE CHECKSUM: 32a62197b6ebd7bf607d073c6fe97c763538a9f2
+PODS:
+  - NeedleFoundation (0.14.0)
+
+DEPENDENCIES:
+  - NeedleFoundation
+
+SPEC REPOS:
+  trunk:
+    - NeedleFoundation
+
+SPEC CHECKSUMS:
+  NeedleFoundation: ad7a4bcff2a44dc51a097b236f7235694a09dc97
+
+PODFILE CHECKSUM: e5c5f78d90c9fe5796f7b860afa631d5ca256069
 
 COCOAPODS: 1.9.1
