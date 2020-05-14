@@ -2,9 +2,10 @@
 
 This repo is about a POC to work with the Uber's needle DI framework. It contains a base iOS project and instructions to get it run.
 
+More info: https://github.com/uber/needle
+
 ## Requirements
 
----
 
 ### Cocoapods
 
@@ -31,7 +32,6 @@ $ make
 
 ## Xcode Integration
 
----
 
 Add a "Run Script" phase in the application's executable target's "Build Phases" section and put it before of `Compile Sources` phase, then add the following command:
 
@@ -45,13 +45,11 @@ If you are using `Carthage mathod`, please use the follow command instead:
 export SOURCEKIT_LOGGING=0 && $SRCROOT/Carthage/Checkouts/needle/Generator/bin/needle generate $SRCROOT/$TARGETNAME/NeedleGenerated.swift $SRCROOT/$TARGETNAME
 ````
 
-### How does it work?
+## How does it work?
 
----
 
 Please visit the official documentation to learn the basis of this lib here: [Needle](https://github.com/uber/needle/blob/master/API.md)
 
 ## Final implementation
----
 
 You can found the final implementation at the branch `needleImpl`
