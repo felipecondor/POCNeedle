@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0194D87B1136D4503EA2CE11894E4F0B /* MockComponentPathBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405C5F8DDD7E6DB6EA0A291AFF801C37 /* MockComponentPathBuilder.swift */; };
+		179C4844BC07BC7B1FEAF5C13ACE1473 /* Pods-POCNeedle-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8348878B964D22329E4AE58ABC4BE279 /* Pods-POCNeedle-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F0FC1408A78769510AE7F55232CBF7B /* NonCoreComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D64457DD365EFFFCA68BB3DEA955643 /* NonCoreComponent.swift */; };
+		4E9377A3AB43D80C53762E368A2C27D5 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54FCF82486D6305BD23A23681756FCF /* Component.swift */; };
+		4E9D344CDB1EB67ED399E19A728D3910 /* Bootstrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E39F2F292F5EEBB5A1A716CB628AFE9F /* Bootstrap.swift */; };
+		677D718D51842ED8F1EA8972190298A7 /* NeedleFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 577F2AED0803D163C09A09C69C509BA1 /* NeedleFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80224B7AD242413DD20AA28E04B774A4 /* Pods-POCNeedle-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A53F960F2F2491CF02E63470362495AB /* Pods-POCNeedle-dummy.m */; };
+		81EE656DF570184608E70962659A06B2 /* NeedleFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3760234D2F1C1389B156004E5C5F6D71 /* NeedleFoundation-dummy.m */; };
+		8D7C96646080638C7E63B0066349DC79 /* DependencyProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F570A959C140D3F942E2A3A701698A20 /* DependencyProviderRegistry.swift */; };
+		8ECF97E04501B29277D5B2939F54DFC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		98E4FFEDC3004D5209D1305614E04867 /* PluginExtensionProviderRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59B7E631217F60B970ECDD3EC0B8286 /* PluginExtensionProviderRegistry.swift */; };
+		9FDBA69EC1F0FD0B0090964B264F2C96 /* PluginizedScopeLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C518877307F040B77BEC891BF5BD4403 /* PluginizedScopeLifecycle.swift */; };
+		B36CE04C8CB39DAB8823EEC6B8BFCD06 /* PluginizedComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A2AF3E8975CABB5389AB381FB45233C /* PluginizedComponent.swift */; };
+		E75D71058BEEDF980DC01791AAFAF8B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04605CF8A8549244677B056381EC279A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B86598AA19B09062C6FF0E502160061;
+			remoteInfo = NeedleFoundation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A5659B0ED9151ED6089BADFBF273057 /* NeedleFoundation-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NeedleFoundation-prefix.pch"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3760234D2F1C1389B156004E5C5F6D71 /* NeedleFoundation-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NeedleFoundation-dummy.m"; sourceTree = "<group>"; };
+		405C5F8DDD7E6DB6EA0A291AFF801C37 /* MockComponentPathBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MockComponentPathBuilder.swift; path = Sources/NeedleFoundationTest/MockComponentPathBuilder.swift; sourceTree = "<group>"; };
+		4CF61AC1E65900ABB86B1CCCA562F93C /* Pods-POCNeedle-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-POCNeedle-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4DD388F78A75864EA06AEA855B1E357E /* Pods-POCNeedle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-POCNeedle.debug.xcconfig"; sourceTree = "<group>"; };
+		57474CBF008B886BB5B20E7FBCEFD240 /* NeedleFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NeedleFoundation.framework; path = NeedleFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		577F2AED0803D163C09A09C69C509BA1 /* NeedleFoundation-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NeedleFoundation-umbrella.h"; sourceTree = "<group>"; };
+		5B8D75581E34CF9834EA58D9B6635B9E /* Pods_POCNeedle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_POCNeedle.framework; path = "Pods-POCNeedle.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8348878B964D22329E4AE58ABC4BE279 /* Pods-POCNeedle-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-POCNeedle-umbrella.h"; sourceTree = "<group>"; };
+		8FB297CDE868FEF7F41592A71B6FF0E3 /* Pods-POCNeedle-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-POCNeedle-Info.plist"; sourceTree = "<group>"; };
+		9A2AF3E8975CABB5389AB381FB45233C /* PluginizedComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PluginizedComponent.swift; path = Sources/NeedleFoundation/Pluginized/PluginizedComponent.swift; sourceTree = "<group>"; };
+		9D64457DD365EFFFCA68BB3DEA955643 /* NonCoreComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NonCoreComponent.swift; path = Sources/NeedleFoundation/Pluginized/NonCoreComponent.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A53F960F2F2491CF02E63470362495AB /* Pods-POCNeedle-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-POCNeedle-dummy.m"; sourceTree = "<group>"; };
+		BCA93D1D4A73D4B94E68E0AE33D1B244 /* NeedleFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NeedleFoundation-Info.plist"; sourceTree = "<group>"; };
+		BECAE6771A79CE5B79CF01903E8E6908 /* NeedleFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NeedleFoundation.modulemap; sourceTree = "<group>"; };
+		C0C6E3737B24E84DF9FA00A551934529 /* Pods-POCNeedle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-POCNeedle.release.xcconfig"; sourceTree = "<group>"; };
+		C32E2BABA04C01CA088ED78490CDDD09 /* NeedleFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NeedleFoundation.debug.xcconfig; sourceTree = "<group>"; };
+		C518877307F040B77BEC891BF5BD4403 /* PluginizedScopeLifecycle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PluginizedScopeLifecycle.swift; path = Sources/NeedleFoundation/Pluginized/PluginizedScopeLifecycle.swift; sourceTree = "<group>"; };
+		C6E07B865EDF8C1BC0106E8F0667A4B5 /* Pods-POCNeedle-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-POCNeedle-frameworks.sh"; sourceTree = "<group>"; };
+		C7BB2C163190636CFA0FA92A5A8D493E /* Pods-POCNeedle-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-POCNeedle-acknowledgements.plist"; sourceTree = "<group>"; };
+		CA321CF7616780042C12379A466647DB /* NeedleFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NeedleFoundation.release.xcconfig; sourceTree = "<group>"; };
+		D542257E69765D4547EEBA8522C8B2F8 /* Pods-POCNeedle.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-POCNeedle.modulemap"; sourceTree = "<group>"; };
+		E39F2F292F5EEBB5A1A716CB628AFE9F /* Bootstrap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bootstrap.swift; path = Sources/NeedleFoundation/Bootstrap.swift; sourceTree = "<group>"; };
+		E59B7E631217F60B970ECDD3EC0B8286 /* PluginExtensionProviderRegistry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PluginExtensionProviderRegistry.swift; path = Sources/NeedleFoundation/Pluginized/Internal/PluginExtensionProviderRegistry.swift; sourceTree = "<group>"; };
+		F54FCF82486D6305BD23A23681756FCF /* Component.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Component.swift; path = Sources/NeedleFoundation/Component.swift; sourceTree = "<group>"; };
+		F570A959C140D3F942E2A3A701698A20 /* DependencyProviderRegistry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DependencyProviderRegistry.swift; path = Sources/NeedleFoundation/Internal/DependencyProviderRegistry.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E11115F76DF12502ECB95BB23AA7C5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E75D71058BEEDF980DC01791AAFAF8B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5044F800E6533E2444424940BA553FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ECF97E04501B29277D5B2939F54DFC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1132ECC3096BE566DE0D090BC190385E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BECAE6771A79CE5B79CF01903E8E6908 /* NeedleFoundation.modulemap */,
+				3760234D2F1C1389B156004E5C5F6D71 /* NeedleFoundation-dummy.m */,
+				BCA93D1D4A73D4B94E68E0AE33D1B244 /* NeedleFoundation-Info.plist */,
+				1A5659B0ED9151ED6089BADFBF273057 /* NeedleFoundation-prefix.pch */,
+				577F2AED0803D163C09A09C69C509BA1 /* NeedleFoundation-umbrella.h */,
+				C32E2BABA04C01CA088ED78490CDDD09 /* NeedleFoundation.debug.xcconfig */,
+				CA321CF7616780042C12379A466647DB /* NeedleFoundation.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NeedleFoundation";
+			sourceTree = "<group>";
+		};
+		138B4467F08AFBB89B5D581C335D33A6 /* NeedleFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				E39F2F292F5EEBB5A1A716CB628AFE9F /* Bootstrap.swift */,
+				F54FCF82486D6305BD23A23681756FCF /* Component.swift */,
+				F570A959C140D3F942E2A3A701698A20 /* DependencyProviderRegistry.swift */,
+				405C5F8DDD7E6DB6EA0A291AFF801C37 /* MockComponentPathBuilder.swift */,
+				9D64457DD365EFFFCA68BB3DEA955643 /* NonCoreComponent.swift */,
+				E59B7E631217F60B970ECDD3EC0B8286 /* PluginExtensionProviderRegistry.swift */,
+				9A2AF3E8975CABB5389AB381FB45233C /* PluginizedComponent.swift */,
+				C518877307F040B77BEC891BF5BD4403 /* PluginizedScopeLifecycle.swift */,
+				1132ECC3096BE566DE0D090BC190385E /* Support Files */,
+			);
+			name = NeedleFoundation;
+			path = NeedleFoundation;
+			sourceTree = "<group>";
+		};
+		16DF6540FAB9414E5C957F1B6192DDA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				138B4467F08AFBB89B5D581C335D33A6 /* NeedleFoundation */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		487C077A8B1C1DA7968CF6D204EC88C5 /* Pods-POCNeedle */ = {
+			isa = PBXGroup;
+			children = (
+				D542257E69765D4547EEBA8522C8B2F8 /* Pods-POCNeedle.modulemap */,
+				4CF61AC1E65900ABB86B1CCCA562F93C /* Pods-POCNeedle-acknowledgements.markdown */,
+				C7BB2C163190636CFA0FA92A5A8D493E /* Pods-POCNeedle-acknowledgements.plist */,
+				A53F960F2F2491CF02E63470362495AB /* Pods-POCNeedle-dummy.m */,
+				C6E07B865EDF8C1BC0106E8F0667A4B5 /* Pods-POCNeedle-frameworks.sh */,
+				8FB297CDE868FEF7F41592A71B6FF0E3 /* Pods-POCNeedle-Info.plist */,
+				8348878B964D22329E4AE58ABC4BE279 /* Pods-POCNeedle-umbrella.h */,
+				4DD388F78A75864EA06AEA855B1E357E /* Pods-POCNeedle.debug.xcconfig */,
+				C0C6E3737B24E84DF9FA00A551934529 /* Pods-POCNeedle.release.xcconfig */,
+			);
+			name = "Pods-POCNeedle";
+			path = "Target Support Files/Pods-POCNeedle";
+			sourceTree = "<group>";
+		};
+		8D4D030AA7607A7F5719CFDC889A708F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57474CBF008B886BB5B20E7FBCEFD240 /* NeedleFoundation.framework */,
+				5B8D75581E34CF9834EA58D9B6635B9E /* Pods_POCNeedle.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				16DF6540FAB9414E5C957F1B6192DDA0 /* Pods */,
+				8D4D030AA7607A7F5719CFDC889A708F /* Products */,
+				D6FD5ED4C526F7C29662AD858B4F557B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6FD5ED4C526F7C29662AD858B4F557B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				487C077A8B1C1DA7968CF6D204EC88C5 /* Pods-POCNeedle */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4098973BCACFD102C47DCE485F500301 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				179C4844BC07BC7B1FEAF5C13ACE1473 /* Pods-POCNeedle-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC69130330354B8E32DFE537B743061F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677D718D51842ED8F1EA8972190298A7 /* NeedleFoundation-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B86598AA19B09062C6FF0E502160061 /* NeedleFoundation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 154EA6C0D73F0A27B524B25954589DDD /* Build configuration list for PBXNativeTarget "NeedleFoundation" */;
+			buildPhases = (
+				DC69130330354B8E32DFE537B743061F /* Headers */,
+				99978AEAD9637C356A843B354723316D /* Sources */,
+				C5044F800E6533E2444424940BA553FC /* Frameworks */,
+				BC900B622B6F28B759A27C68737AC0B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeedleFoundation;
+			productName = NeedleFoundation;
+			productReference = 57474CBF008B886BB5B20E7FBCEFD240 /* NeedleFoundation.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A93A83A7448459F900405ACE981A3512 /* Pods-POCNeedle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B1726CFDBA742674F6BA8DCE8000303 /* Build configuration list for PBXNativeTarget "Pods-POCNeedle" */;
+			buildPhases = (
+				4098973BCACFD102C47DCE485F500301 /* Headers */,
+				5EC0F8E2F1790AA2736D7EE9AF936D1C /* Sources */,
+				4E11115F76DF12502ECB95BB23AA7C5E /* Frameworks */,
+				F9384AC35C6590A30EEEDE4C8DB27952 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24AEFEFDEA5F4DE9602154D448E39A02 /* PBXTargetDependency */,
+			);
+			name = "Pods-POCNeedle";
+			productName = "Pods-POCNeedle";
+			productReference = 5B8D75581E34CF9834EA58D9B6635B9E /* Pods_POCNeedle.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8D4D030AA7607A7F5719CFDC889A708F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0B86598AA19B09062C6FF0E502160061 /* NeedleFoundation */,
+				A93A83A7448459F900405ACE981A3512 /* Pods-POCNeedle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC900B622B6F28B759A27C68737AC0B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9384AC35C6590A30EEEDE4C8DB27952 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EC0F8E2F1790AA2736D7EE9AF936D1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80224B7AD242413DD20AA28E04B774A4 /* Pods-POCNeedle-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99978AEAD9637C356A843B354723316D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9D344CDB1EB67ED399E19A728D3910 /* Bootstrap.swift in Sources */,
+				4E9377A3AB43D80C53762E368A2C27D5 /* Component.swift in Sources */,
+				8D7C96646080638C7E63B0066349DC79 /* DependencyProviderRegistry.swift in Sources */,
+				0194D87B1136D4503EA2CE11894E4F0B /* MockComponentPathBuilder.swift in Sources */,
+				81EE656DF570184608E70962659A06B2 /* NeedleFoundation-dummy.m in Sources */,
+				3F0FC1408A78769510AE7F55232CBF7B /* NonCoreComponent.swift in Sources */,
+				98E4FFEDC3004D5209D1305614E04867 /* PluginExtensionProviderRegistry.swift in Sources */,
+				B36CE04C8CB39DAB8823EEC6B8BFCD06 /* PluginizedComponent.swift in Sources */,
+				9FDBA69EC1F0FD0B0090964B264F2C96 /* PluginizedScopeLifecycle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24AEFEFDEA5F4DE9602154D448E39A02 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NeedleFoundation;
+			target = 0B86598AA19B09062C6FF0E502160061 /* NeedleFoundation */;
+			targetProxy = 04605CF8A8549244677B056381EC279A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		91E43CA0B943F5DCE883BD022315F87E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA321CF7616780042C12379A466647DB /* NeedleFoundation.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NeedleFoundation/NeedleFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NeedleFoundation/NeedleFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NeedleFoundation/NeedleFoundation.modulemap";
+				PRODUCT_MODULE_NAME = NeedleFoundation;
+				PRODUCT_NAME = NeedleFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EBC3E75C784B892F6F6A65F8FA19F584 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0C6E3737B24E84DF9FA00A551934529 /* Pods-POCNeedle.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-POCNeedle/Pods-POCNeedle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-POCNeedle/Pods-POCNeedle.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECB437504DF805BD96CAABF97400B526 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		EF70D581F3E9652919AEBDB791E9CF99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C32E2BABA04C01CA088ED78490CDDD09 /* NeedleFoundation.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NeedleFoundation/NeedleFoundation-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NeedleFoundation/NeedleFoundation-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/NeedleFoundation/NeedleFoundation.modulemap";
+				PRODUCT_MODULE_NAME = NeedleFoundation;
+				PRODUCT_NAME = NeedleFoundation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFBACA4BC5675D50257542C8707342ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DD388F78A75864EA06AEA855B1E357E /* Pods-POCNeedle.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-POCNeedle/Pods-POCNeedle-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-POCNeedle/Pods-POCNeedle.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0B1726CFDBA742674F6BA8DCE8000303 /* Build configuration list for PBXNativeTarget "Pods-POCNeedle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFBACA4BC5675D50257542C8707342ED /* Debug */,
+				EBC3E75C784B892F6F6A65F8FA19F584 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		154EA6C0D73F0A27B524B25954589DDD /* Build configuration list for PBXNativeTarget "NeedleFoundation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF70D581F3E9652919AEBDB791E9CF99 /* Debug */,
+				91E43CA0B943F5DCE883BD022315F87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */,
+				ECB437504DF805BD96CAABF97400B526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
