@@ -19,32 +19,24 @@ class UserControl {
     func setUserShown() {
         userShown = true
     }
-    
-    //Singleton 💥
-    static let shared: UserControl = UserControl()
-    
-    private init() {
-    }
 }
 
 class ViewController: UIViewController {
+    
+    var userController: UserDetailViewControllerBuilder?
+    var welcomeVC: WelcomeViewControllerBuilder?
+    var userControl: UserControl?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func presentAction(_ sender: Any) {
-        
-        let user = User(name: "Testing", lastName: "User")
-        
         let vc: UIViewController
-        
-        if UserControl.shared.userShown {
-            vc = UserViewController(user: user, userControl: UserControl.shared)
+        if userControl!.userShown {
+            vc = userController!.userDetailViewController
         } else {
-            vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "WelcomeUserDetailViewController")
-            (vc as! WelcomeUserDetailViewController).user = user
+            vc = welcomeVC!.welcomeViewController
         }
         let navigation = UINavigationController(rootViewController: vc)
         self.present(navigation, animated: true, completion: nil)
@@ -53,17 +45,16 @@ class ViewController: UIViewController {
 
 class WelcomeUserDetailViewController: UIViewController {
     
-    var user: User?
+    var userControllerBuilder: UserDetailViewControllerBuilder?
     
     override func viewDidLoad() {
        title = "Welcome User Detail"
     }
     
     @IBAction func showUserDetail(_ sender: Any) {
-        guard let user = user else {
+        guard let userVC = userControllerBuilder?.userDetailViewController else {
             fatalError("User not provided")
         }
-        let userVC = UserViewController(user: user, userControl: UserControl.shared)
         self.navigationController?.pushViewController(userVC,
                                                       animated: true)
     }

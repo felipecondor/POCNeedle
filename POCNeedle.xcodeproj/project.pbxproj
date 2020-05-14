@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		86FF2251246DB5740044F4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF224F246DB5740044F4FD /* Main.storyboard */; };
 		86FF2253246DB5760044F4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86FF2252246DB5760044F4FD /* Assets.xcassets */; };
 		86FF2256246DB5760044F4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FF2254246DB5760044F4FD /* LaunchScreen.storyboard */; };
+		86FF2263246DEC9A0044F4FD /* RootDIComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF2262246DEC9A0044F4FD /* RootDIComponent.swift */; };
+		86FF2266246E032F0044F4FD /* NeedleGenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FF2265246E032F0044F4FD /* NeedleGenerated.swift */; };
 		9CE53E6BF35CCD22C75F8D65 /* Pods_POCNeedle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24B7524F3DB56760C3B8B86 /* Pods_POCNeedle.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		86FF2252246DB5760044F4FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86FF2255246DB5760044F4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86FF2257246DB5760044F4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86FF2262246DEC9A0044F4FD /* RootDIComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootDIComponent.swift; sourceTree = "<group>"; };
+		86FF2265246E032F0044F4FD /* NeedleGenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeedleGenerated.swift; sourceTree = "<group>"; };
 		8CC5D644ECAEB9391C1EDECC /* Pods-POCNeedle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POCNeedle.release.xcconfig"; path = "Target Support Files/Pods-POCNeedle/Pods-POCNeedle.release.xcconfig"; sourceTree = "<group>"; };
 		A24B7524F3DB56760C3B8B86 /* Pods_POCNeedle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_POCNeedle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C365EE0B8479BAFE0EEF8A3E /* Pods-POCNeedle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-POCNeedle.debug.xcconfig"; path = "Target Support Files/Pods-POCNeedle/Pods-POCNeedle.debug.xcconfig"; sourceTree = "<group>"; };
@@ -56,7 +60,6 @@
 				C365EE0B8479BAFE0EEF8A3E /* Pods-POCNeedle.debug.xcconfig */,
 				8CC5D644ECAEB9391C1EDECC /* Pods-POCNeedle.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +84,7 @@
 		86FF2248246DB5740044F4FD /* POCNeedle */ = {
 			isa = PBXGroup;
 			children = (
+				86FF2261246DEC0A0044F4FD /* Needle */,
 				86FF2249246DB5740044F4FD /* AppDelegate.swift */,
 				86FF224B246DB5740044F4FD /* SceneDelegate.swift */,
 				86FF224D246DB5740044F4FD /* ViewController.swift */,
@@ -88,8 +92,17 @@
 				86FF2252246DB5760044F4FD /* Assets.xcassets */,
 				86FF2254246DB5760044F4FD /* LaunchScreen.storyboard */,
 				86FF2257246DB5760044F4FD /* Info.plist */,
+				86FF2265246E032F0044F4FD /* NeedleGenerated.swift */,
 			);
 			path = POCNeedle;
+			sourceTree = "<group>";
+		};
+		86FF2261246DEC0A0044F4FD /* Needle */ = {
+			isa = PBXGroup;
+			children = (
+				86FF2262246DEC9A0044F4FD /* RootDIComponent.swift */,
+			);
+			path = Needle;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,10 +113,11 @@
 			buildConfigurationList = 86FF225A246DB5760044F4FD /* Build configuration list for PBXNativeTarget "POCNeedle" */;
 			buildPhases = (
 				68421EC542FA8FA5D097189F /* [CP] Check Pods Manifest.lock */,
+				86FF2264246E00D20044F4FD /* ShellScript */,
 				86FF2242246DB5740044F4FD /* Sources */,
 				86FF2243246DB5740044F4FD /* Frameworks */,
 				86FF2244246DB5740044F4FD /* Resources */,
-				0D2450338EDE7402D3A2C9D9 /* [CP] Embed Pods Frameworks */,
+				8B35C5B8D2A956CD50BDEE74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,6 +214,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		86FF2264246E00D20044F4FD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "needle generate $SRCROOT/$TARGETNAME/NeedleGenerated.swift $SRCROOT/$TARGETNAME\n";
+		};
+		8B35C5B8D2A956CD50BDEE74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POCNeedle/Pods-POCNeedle-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-POCNeedle/Pods-POCNeedle-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-POCNeedle/Pods-POCNeedle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -209,7 +257,9 @@
 			files = (
 				86FF224E246DB5740044F4FD /* ViewController.swift in Sources */,
 				86FF224A246DB5740044F4FD /* AppDelegate.swift in Sources */,
+				86FF2263246DEC9A0044F4FD /* RootDIComponent.swift in Sources */,
 				86FF224C246DB5740044F4FD /* SceneDelegate.swift in Sources */,
+				86FF2266246E032F0044F4FD /* NeedleGenerated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
